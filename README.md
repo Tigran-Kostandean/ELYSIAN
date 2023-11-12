@@ -1,5 +1,6 @@
 # ELYSIAN
 --
-- Themes
-- Plugins
-- Fixe
+- Linux (Ubuntu/Debian)
+-- Themes
+-- Plugins
+-- Fixe
