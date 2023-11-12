@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "$1" == '-c' ] || [ "$1" == '--create' ]; then
+    echo -e "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>Web</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\" />\n</head>\n<body>\n    <script src=\"scripts.js\"></script>\n</body>\n</html>" > index.html
+
+    echo -e "" > styles.css
+    echo -e "" > scripts.js
+    echo -e "\033[92mFile index.html, styles.css and scripts.js created."
+elif [ "$1" == '-r' ] || [ "$1" == '--remove' ]; then
+    rm -f index.html styles.css scripts.js
+    echo -e "\033[92mFile index.html, styles.css and scripts.js removed."
+else
+    echo -e "Options:
+  -c, --create  Create the files for a web project.
+  -r, --remove  Remove the created files."
+fi
+
