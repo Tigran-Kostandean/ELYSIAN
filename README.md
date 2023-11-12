@@ -1,2 +1,5 @@
 # ELYSIAN
 --
+- Themes
+- Plugins
+- Fixe
